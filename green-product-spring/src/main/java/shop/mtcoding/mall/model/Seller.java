@@ -7,16 +7,13 @@ import javax.persistence.*;
 
 @Setter
 @Getter
-@Table(name = "product_tb")
+@Table(name = "seller_tb")
 @Entity
-public class Product {
+public class Seller {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private Integer price;
-    private Integer qty;
 
-    @ManyToOne
-    private Seller seller;
+    private String name;
+    private String email;
 }

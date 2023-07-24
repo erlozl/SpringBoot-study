@@ -25,14 +25,13 @@ dependencies {
     runtimeOnly 'com.h2database:h2'
     // https://mvnrepository.com/artifact/ch.simas.qlrm/qlrm
     implementation group: 'ch.simas.qlrm', name: 'qlrm', version: '1.7.1'
-
     implementation 'javax.servlet:jstl'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
     implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

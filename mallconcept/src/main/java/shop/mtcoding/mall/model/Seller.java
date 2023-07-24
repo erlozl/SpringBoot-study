@@ -5,18 +5,15 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Setter
 @Getter
-@Table(name = "product_tb")
+@Setter
+@Table(name = "seller_tb")
 @Entity
-public class Product {
+public class Seller {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    auto_increment 생성하게 해주는 어노테이션
     private Integer id;
     private String name;
-    private Integer price;
-    private Integer qty;
-
-    @ManyToOne
-    private Seller seller;
+    private String email;
 }

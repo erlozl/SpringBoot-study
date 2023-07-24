@@ -1,6 +1,5 @@
 server:
   port: 8080
-
 spring:
   mvc:
     view:
@@ -13,6 +12,5 @@ spring:
     password: zhsks123
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
-

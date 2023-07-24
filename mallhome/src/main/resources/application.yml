@@ -1,6 +1,5 @@
 server:
   port: 8080
-
 spring:
   mvc:
     view:
@@ -8,11 +7,10 @@ spring:
       suffix: .jsp
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/metadb
+    url: jdbc:mysql://localhost:3306/exam
     username: root
     password: zhsks123
   jpa:
     hibernate:
       ddl-auto: create
     show-sql: true
-

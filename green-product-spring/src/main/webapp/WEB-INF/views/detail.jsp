@@ -42,7 +42,11 @@
         <div class="mb-3">
             <input type="text" class="form-control" value="${p.qty}" name="qty">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">상품수정</button>
+    </form>
+    <form action="/product/delete" method="post">
+        <input type="hidden" class="form-control" value="${p.id}" name="id">
+        <button type="submit" class="btn btn-danger">상품삭제</button>
     </form>
 </div>
 

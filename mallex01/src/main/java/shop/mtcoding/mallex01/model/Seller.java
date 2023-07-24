@@ -1,22 +1,21 @@
-package shop.mtcoding.mall.model;
+package shop.mtcoding.mallex01.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-@Setter
 @Getter
-@Table(name = "product_tb")
+@Setter
+@Table(name="seller_tb")
 @Entity
-public class Product {
+
+public class Seller {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private Integer price;
-    private Integer qty;
+    private String phone;
 
-    @ManyToOne
-    private Seller seller;
 }
