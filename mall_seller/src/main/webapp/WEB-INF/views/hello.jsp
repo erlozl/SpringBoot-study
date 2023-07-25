@@ -25,7 +25,6 @@
             ${l}
         </c:forEach>
 
-
     </div>
 </div>
 
